@@ -184,4 +184,46 @@ document.addEventListener('DOMContentLoaded', () => {
         );
         window.open(`https://wa.me/56942393592?text=${mensaje}`, '_blank');        reservationModal.style.display = 'none';        reservationForm.reset();
     });
+
+    // When opening modal
+    function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        document.body.classList.add('modal-open');
+        modal.style.display = "block";
+        // Ensure the hamburger menu is hidden and inactive
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if (navToggle && navMenu) {
+            navMenu.classList.remove('show');
+            navToggle.classList.remove('active');
+        }
+    }
+
+    // When closing modal
+    function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        document.body.classList.remove('modal-open');
+        modal.style.display = "none";
+    }
+
+    // Update event listeners for reservation modal
+    document.querySelectorAll('.cta-button:not(.secondary)').forEach(button => {
+        button.addEventListener('click', (e) => {
+            if (!button.classList.contains('secondary')) {
+                e.preventDefault();
+                openModal('reservationModal');
+            }
+        });
+    });
+
+    document.getElementById('closeReservation').addEventListener('click', () => {
+        closeModal('reservationModal');
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', (event) => {
+        if (event.target.classList.contains('modal')) {
+            closeModal(event.target.id);
+        }
+    });
 });

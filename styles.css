@@ -255,7 +255,7 @@ body {
 }
 
 .hero-section {
-    background: url('../images/hero1.jpg') center/cover;
+    background: url('./images/hero1.jpg') center/cover;
     color: var(--color-white);
     padding: 100px 40px;
     position: relative;
@@ -339,7 +339,7 @@ body {
     margin-bottom: 15px;
     object-fit: cover;
     height: 250px;
-    background: url('../images/cortepelo.jpg') no-repeat center center;
+    background: url('./images/cortepelo.jpg') no-repeat center center;
 }
 
 .service-card-content {

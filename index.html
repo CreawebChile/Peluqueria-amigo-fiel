@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4b3832">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ca8787">
+    <meta name="msapplication-TileColor" content="#ca8787">
+    <meta name="theme-color" content="#ca8787">
+    
+    <title>Perruquería Amigo Fiel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Añadir el loader al principio del body -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <svg class="dog" viewBox="0 0 100 100">
+                <path d="M50,30 C60,10 80,10 90,30 C95,40 95,50 90,60 C80,80 60,80 50,60 C40,80 20,80 10,60 C5,50 5,40 10,30 C20,10 40,10 50,30 Z"/>
+                <circle class="eye" cx="35" cy="40" r="3"/>
+                <circle class="eye" cx="65" cy="40" r="3"/>
+                <path class="tongue" d="M45,55 C50,65 50,65 55,55 C50,60 50,60 45,55 Z"/>
+            </svg>
+            <p>Cargando...</p>
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <a href="tel:+123456789"><i class="fas fa-phone"></i> +569 42393592</a>
+                <span><i class="fas fa-clock"></i> Lun-Sab: 9:00-19:00</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/perruqueria.amigofiel.5?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/perruqueriarancagua/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/56942393592"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@perruqueriarancagua"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo-container">
+                    <img src="images/logocanino.jpg" alt="Logo Perruquería Amigo Fiel">
+                </div>
+                <div class="header-titles">
+                    <h1 class="site-title">Perruquería Amigo Fiel</h1>
+                    <p class="site-description">Expertos en el cuidado de tu mascota</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <button type="button" class="cta-button header-cta">
+                    <i class="fas fa-calendar"></i> Agendar Cita
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <button class="nav-toggle" aria-label="Menú de navegación">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <!-- Agregar la nueva sección de redes sociales -->
+                <li class="mobile-social">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/perruqueria.amigofiel.5?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/perruqueriarancagua/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/56942393592"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@perruqueriarancagua"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section" id="home">
+            <h2>Bienvenidos a Perruquería Amigo Fiel</h2>
+            <p class="hero-text">Expertos en el cuidado y belleza de tu mascota</p>
+            <div class="hero-buttons">
+                <button type="button" class="cta-button">
+                    <i class="fas fa-calendar"></i> Reserva una cita
+                </button>
+                <!-- Cambiado de button a anchor y añadido el scroll suave -->
+                <a href="#services" class="cta-button secondary" data-scroll>
+                    <i class="fas fa-paw"></i> Nuestros Servicios
+                </a>
+            </div>
+        </section>
+
+        <section id="services" class="services-grid">
+            <div class="service-card">
+                <img src="../images/cortepelo.jpg" alt="Servicio de corte">
+                <div class="service-card-content">
+                    <h3><i class="fas fa-cut"></i> Corte y Peinado</h3>
+                    <p>Cortes profesionales adaptados a cada raza</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Peinado y estilo</li>
+                        <li><i class="fas fa-check"></i> Corte de uñas y despunte.</li>
+                        <li><i class="fas fa-check"></i> Aplicación de perfume.</li>
+                    </ul>
+                    <button type="button" class="cta-button">
+                        <i class="fas fa-calendar"></i> Reservar ahora
+                    </button>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="../images/banio.png" alt="Servicio de baño y limpieza">
+                <div class="service-card-content">
+                    <h3><i class="fas fa-bath"></i> Baño y Limpieza</h3>
+                    <p>Servicio completo de higiene y cuidado 2024</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Baño desengrasante e hidratante</li>
+                        <li><i class="fas fa-check"></i> Baño específico de manto iluminador</li>
+                        <li><i class="fas fa-check"></i> Baño de proteínas y protección</li>
+                        <li><i class="fas fa-check"></i> Limpieza e hidratación de cojinetes</li>
+                        <li><i class="fas fa-check"></i> Limpieza de orejitas</li>
+                        <li><i class="fas fa-check"></i> Secado con aire tibio</li>
+                    </ul>
+                    <button type="button" class="cta-button">
+                        <i class="fas fa-calendar"></i> Reservar ahora
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="precios" class="precios-section">
+            <h2><i class="fas fa-tag"></i> Lista de Precios 2024</h2>
+            <button class="toggle-precios" id="togglePrecios">
+                <span>Ver lista de precios</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="precios-content" id="preciosContent">
+                <h3 class="precios-subtitle">Servicios de acuerdo al tamaño y tipo de perro:</h3>
+                <div class="precios-lista">
+                    <div class="precio-item">
+                        <h4>Yorkshire pequeño</h4>
+                        <p>Pelo liso, hasta 30 cm</p>
+                        <span class="precio">$18.000</span>
+                    </div>
+                    <div class="precio-item">
+                        <h4>Yorkshire mediano, Poodle Toy, Fox Terrier</h4>
+                        <p>Hasta 40 cm</p>
+                        <span class="precio">$20.000</span>
+                    </div>
+                    <div class="precio-item">
+                        <h4>Maltés, Poodle pequeño, Snausher</h4>
+                        <p>Hasta 60 cm</p>
+                        <span class="precio">$25.000</span>
+                    </div>
+                    <div class="precio-item">
+                        <h4>Cocker Spaniel, Mestizo, Poodle mediano</h4>
+                        <p>Hasta 70 cm</p>
+                        <span class="precio">$28.000</span>
+                    </div>
+                    <div class="medida-info">
+                        <h4><i class="fas fa-ruler"></i> ¿Cómo se mide?</h4>
+                        <p>La medida se toma desde la cabeza hasta la punta de la cola.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2><i class="fas fa-envelope"></i> Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> Teléfono: +569 42393592</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle Calama, Villa, Av. Nelson Pereira, 2840482 Rancagua, O'Higgins</p>
+                        <p><i class="fas fa-clock"></i> Horario: Lun-Sab 9:00-19:00</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.482172670914!2d-70.74050832462947!3d-34.13400427312625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966343d3e04e19bb%3A0xec4569f8679de453!2sPeluqueria%20Canina%20Amigo%20Fiel!5e0!3m2!1ses-419!2scl!4v1734401854147!5m2!1ses-419!2scl" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/perruqueria.amigofiel.5?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/perruqueriarancagua/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/56942393592"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@perruqueriarancagua"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>&copy; 2023 Perruquería Amigo Fiel. Todos los derechos reservados.</p>
+            <p>Diseñado por <a href="https://creawebchile.github.io/CreawebChile/" class="creaweb-link" target="_blank">CreaWeb Chile</a></p>
+        </div>
+    </footer>
+
+    <!-- Actualizar la sección de precios -->
+    <div id="preciosModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Lista de Precios 2024</h2>
+            <div class="precios-lista">
+                <div class="precio-item">
+                    <h3>Yorkshire pequeño</h3>
+                    <p>Pelo liso, hasta 30 cm</p>
+                    <span class="precio">$18.000</span>
+                </div>
+                <div class="precio-item">
+                    <h3>Yorkshire mediano, Poodle Toy, Fox Terrier</h3>
+                    <p>Hasta 40 cm</p>
+                    <span class="precio">$20.000</span>
+                </div>
+                <div class="precio-item">
+                    <h3>Maltés, Poodle pequeño, Snausher</h3>
+                    <p>Hasta 60 cm</p>
+                    <span class="precio">$25.000</span>
+                </div>
+                <div class="precio-item">
+                    <h3>Cocker Spaniel, Mestizo, Poodle mediano</h3>
+                    <p>Hasta 70 cm</p>
+                    <span class="precio">$28.000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add before closing body tag -->
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeReservation">&times;</span>
+            <h2>Reservar Cita</h2>
+            <form id="reservationForm" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="nombrePersona">Nombre de la persona:</label>
+                    <input type="text" id="nombrePersona" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombreMascota">Nombre de la mascota:</label>
+                    <input type="text" id="nombreMascota" required>
+                </div>
+                <div class="form-group">
+                    <label for="servicio">Servicio:</label>
+                    <select id="servicio" required>
+                        <option value="">Seleccione un servicio</option>
+                        <option value="Yorkshire pequeño - $18.000">Yorkshire pequeño - $18.000</option>
+                        <option value="Yorkshire mediano/Poodle Toy - $20.000">Yorkshire mediano/Poodle Toy - $20.000</option>
+                        <option value="Maltés/Poodle pequeño - $25.000">Maltés/Poodle pequeño - $25.000</option>
+                        <option value="Cocker/Mestizo/Poodle mediano - $28.000">Cocker/Mestizo/Poodle mediano - $28.000</option>
+                    </select>
+                </div>
+                <button type="button" class="cta-button" id="submitReservation">
+                    <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
